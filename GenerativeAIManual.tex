@@ -35,6 +35,12 @@ First.Last@westpoint.edu}
 West Point, NY \\
 Taylor.Brown@westpoint.edu}
 
+\author{\IEEEauthorblockN{Cadet Charlotte Richman}\\
+\IEEEauthorblockA{\textit{United States Military Academy}\\
+West Point, NY \\
+charlotte.richman@westpoint.edu}\\
+}
+
 \maketitle
 
 \begin{abstract}
@@ -123,6 +129,11 @@ Sometimes during the class you will come across a library that is not included i
 
 \subsection{Implementing States and Using State Diagrams} 
 % Are state diagrams helpful at the start of a project? How did you use them?
+I highly recommend creating a state diagram and a block diagram at the start of every project. In my experience in EE450, state diagrams 
+and block diagrams were some of the most useful tools in helping me complete each project.
+The state diagrams provided a clearly layed out visual representation of what the robot is supposed to be able to do, and how it
+should transition from one behavior or state to another. By mapping out each state, the conditions for each transition, and 
+the actions associated with each state, I was able to generate my code and final product much more efficiently. 
 State diagrams are extremely helpful at the start of EE450 projects even if they are not required/graded because they give you a clear visual of how your robot should behave. When you breakdown your system into states, it becomes much easier to understand what the robot is supposed to do at any given time and what events cause it to switch behaviors.
 
 In EE450, your robot will almost always need to move between different modes (for example: \texttt{SAFE}, \texttt{FOLLOW}, \texttt{OBJECT DETECTED}, or \texttt{ATTACK/DEFEND}). A state diagram lets you map these different mdoes out before you begin to write any code.
@@ -146,9 +157,20 @@ Overall, state diagrams can help you:
 
 They are a simple but an extremely useful tool, especially when your robot starts getting more complex. For some, in the earlier projects you may feel like the state diagram is unnecessary, however highly reccomend getting some repetitions early on, because they are extremely helpful in later projects. Others may beenfit from a state diagram from the start of Project 2 to the conclusion of Project 5. 
 
+The block diagrmas are 
+helpful for visualizing the overall system, including sensors, control logic, servos, buzzers, LEDs, and other components.
+These diagrams allowed me to break down complex behaviors into manageable parts, making it easier to implement and test each component 
+individually before integrating them into the final system.
+
 \subsection{File Structure and Version Management --- Avoid Drowning in Code} 
 % Arduino sketches can grow into large, complex files. How did you organize them internally so you are always confident
 % that your program is doing what you want?
+To help manage me code and avoid getting lost in what I was doing, I made sure to implement a lot of comments throughout 
+my code. This helped me to remember what each line and section of code was executing and why the code was structred as it was.
+FOr example, if I was using multiple sensors within the same project, I would make a header comment at the top of the functions I 
+called for each individual sensor so that the commands did not get confused and merged together, leading to error messages
+and bugs. Overall, comments helped me stay organized, helped me understand coding better, and made it easier to debug and correct
+mistakes as I went along in each project. 
 
 \section{Integrating Generative AI}
 
@@ -177,6 +199,16 @@ Using generated code from sources like ChatGPT, Copilot, etc., can be an extreme
 
 \section{Testimonials and Examples}
 Feel free to add any other guidance, examples (good or bad!), or advice to other cadets here.
+
+\subsection{Advice from CDT Charlotte Richman}
+I highly recommend completing a test integration plan at the onset of each project. This plan should
+outline how you are going to go about testing each individual componet of your robot, to include servos, sensors, LEDs, etc., 
+and then how you will integrate all those seperate components into one robot that functions as you want it to. 
+This plan will save you a lot of time and frustration when you get into more complex projects and problems with many 
+moving parts because you will know exactly what is and is not functioning properly before you are too deep in and 
+have to backtrack, sometimes all the way back to the beginning. Having a clear plan for testing and integration will save you
+a lot of time and evergy in the long run, and it will help you to understand what each component of your robot is 
+doing, as well as how it is contributing to your entire system. I think that is pretty cool! 
 
 \subsection{Advice from CDT X} % example
 If I had to give one piece of advice, it's to research the sensors I'm using and understand how they work, \textit{then}
