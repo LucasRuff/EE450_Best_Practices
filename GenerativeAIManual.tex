@@ -25,10 +25,10 @@
 West Point, NY \\
 First.Last@westpoint.edu}\\
 \and
-\IEEEauthorblockN{Cadet 2}\\
+\IEEEauthorblockN{Cadet Amani Haskins}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
 West Point, NY \\
-First.Last@westpoint.edu}
+amani.haskins@westpoint.edu}
 }
 \IEEEauthorblockN{Cadet Taylor Brown}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
@@ -125,7 +125,15 @@ Sometimes during the class you will come across a library that is not included i
 \section{Code Management and Structure}
 % Below are a few recommended subsections for you to contribute to, but feel free to create your own if you think it is appropriate.
 \subsection{Incorporating the Sense-Decide-Act Paradigm} 
-% Did you structure your programs this way? Was it successful or not?
+The Sense-Decide-Act Paradigm (SDA) is the most important framework to understand and apply for coding in this class.
+At the start of each project, start with a simple outline of the SDA framework. Typically, I would sugguest looking at your block
+diagram and state diagram to identify what sensors your are using- this is how you know what you are "sensing". Your states from your
+state diagram will indicate your "decide" criteria. To finish this, you must look at what must occur to move your robot from one state to
+another. For example, if you are using a PING distance sensor to detect and fire at a target, the distance is within your "sense" section and 
+choosing to fire at the target is your "decide" criteria (i.e if object is within x distance of the bot).Lastly , the "act" section is what your
+robot does within the state. For example, if the bot senses and then decides to fire, the action is the mechanism that you are firing with. This could be 
+as simple as turning on a buzzer or illuminating an LED or even setting a laser pin high.Ultimately, SDA keeps your code organized and helps you identify
+what you need to code in each function. 
 
 \subsection{Implementing States and Using State Diagrams} 
 % Are state diagrams helpful at the start of a project? How did you use them?
@@ -173,7 +181,22 @@ and bugs. Overall, comments helped me stay organized, helped me understand codin
 mistakes as I went along in each project. 
 
 \section{Integrating Generative AI}
+The use of generative AI for EE450 projects is very helpful. However, there are use practices that are much more helpful than others.
+The Sense-Decide-Act framework is a great way to structure your prompts to AI. So, when you begin writting your code, ensure that you 
+have already created a code "outline" using the SDA framework. For my projects, I wrote a framework that was 50-80 lines of code starting
+with my equipment setup, pin mapping, and variable defintions. Then, I wrote out my functions with the actions I wanted each of them to perform.
+Then, I wrote out the decision criteria for each state and transition. Finally, based on any issues I anticipated, I outlined debounce functions,
+counters, and error handling. Once I had this outline, I used generative AI to help me understand the syntax and options I had for coding my functions.
+Anytime I used AI, I inserted this code outline to ensure that the generated code was something I understood and could implement. For big projects, I often 
+told generative AI what type of function I wanted to build, and it helped figure out how to build it. 
 
+Additionally, generative AI was helpful for group projects. For project 4, my partners and I each coded a seperate section or state. By the time we each had the
+our individual portions completed, we had a lot of code to integrate. By using gen AI, we identified that we needed specific criteria that would allow
+the STM to move between states based on sensor inputs. We used gen AI to help us with this integration.
+
+Ultimately, generative AI is a great tool to help you understand coding syntax, explore function types and integrate pieces of code into 
+one project. However, it is critical that you understand the components of the code that you are using so that you can effectively debugg your
+project. 
 \subsection{Registering for Copilot Pro} 
 % provide instructions for registering for Copilot Pro using a student license
 
@@ -210,11 +233,17 @@ have to backtrack, sometimes all the way back to the beginning. Having a clear p
 a lot of time and evergy in the long run, and it will help you to understand what each component of your robot is 
 doing, as well as how it is contributing to your entire system. I think that is pretty cool! 
 
-\subsection{Advice from CDT X} % example
-If I had to give one piece of advice, it's to research the sensors I'm using and understand how they work, \textit{then}
-build my state diagram and think about what I actually want the robot to do in terms of sensors and actuators, \textit{then}
-think about how I want to prompt the generative AI. Starting by inputting the problem statement into Copilot never worked
-for me a single time --- it always gave me something I didn't understand and had no idea how to fix, causing problems later.
+\subsection{Advice from Amani Haskins} % example
+I have found that Arduino IDE and the libraries we import throughout this class have many tester files. I reccomend that when you
+download a new library, you open "File" and then "Examples" to see the files that are included with the library. I would have saved myself
+a lot of time if I had used these exampled files earlier in the course. The examples will give you a basic set up for servo controlled
+robot like the Traxxas and Boebot. They will also demonstrate a basic set up for the Pixycam and other sensors that are commonly used.
+In my experience, when you are testing code, it also helps to copy and paste the function or section of code you are working on into a different 
+file in Arduino IDE or in a testcode file. I have found that sometimes problems are easier to debugg when you isolate the function/ state that
+the problem is occuring in. Lastly, I highly highly recommend using serial prints throughout your code to debugg, especially when you are using
+multiple states. While states are not hard to build and test on their own, they are hard to track if you do not have an easy mechanism for it.
+For example, when you integrate a state, just simply write "serial.print(in state x") or use an LED and write "digitalWrite(LED_X, HIGH") so you can
+keep track of your states during integration.
 
 \bibliographystyle{plain}
 \bibliography{References}
