@@ -314,6 +314,15 @@ model most of the components that go along with the BOE-Bot, which is frequently
 my robot and to test my code when I needed extra time. Sometimes this can be helpful because certain components can be faulty and might mislead you about where the problem 
 really is. TinkerCAD can also be useful when creating block diagrams for your Arduino Uno.
 
+\subsection{Advice from CDT Tejas Chadha}
+It is critical that instead of trying to write your code all at once, you write specific functions for each function of your robot. For example, having a function that handles movement, one that handles decision making, and one that handles lights or buzzers 
+will help you to stay organized and make debugging much easier. When you have all your code in one big block, it can be hard to identify where the problem is occurring. However, if you have separate functions, you can test each function individually to ensure it is working properly before integrating it into your main code. This will save you a lot of time and frustration in the long run.
+In addition, you should never only work in a single sketch for a project. Have multiple sketches that you have open and test components or functions inside their own sketch. Once you are sure that everything works as intended,
+then you can integrate it into your main sketch. This will help you to isolate problems and make debugging much easier. Finally, use the serial monitor as much as possible to debug your code and components. The best way to do this is to add serial prints throughout your code to track the flow of your program and identify where things might be going wrong. This will help you to understand what is happening in your code and make it easier to identify and fix any issues.
+One example of this is if you are using a distance sensor to detect objects, you should start with short test code to make sure the sensor works. This is a great way to use AI to help you save time through the component testing process. Once you know that all of the components work, you can start to piece together your final coding sketch.
+Another piece of advice that I have is to use your time efficiently. Often you will have a 55 minute class instead of a full lab, but using the extra time to work on your projects is critical to finishing them on time. You need to block off enough time to actually test your robots rather than trying to do it all on demonstration day. Use the time on mini-project days to start working on your main robot. 
+
+
 
 \bibliographystyle{plain}
 \bibliography{References}
