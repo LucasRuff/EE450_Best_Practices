@@ -25,20 +25,30 @@
 West Point, NY \\
 First.Last@westpoint.edu}\\
 \and
+\IEEEauthorblockN{Keishun Pickett}\\
+\IEEEauthorblockA{\textit{United States Military Academy}\\
+West Point, NY \\
+keishun.pickett@westpoint.edu}\\
+\and
 \IEEEauthorblockN{Cadet Amani Haskins}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
 West Point, NY \\
-amani.haskins@westpoint.edu}
-}
+amani.haskins@westpoint.edu}\\
+\and
 \IEEEauthorblockN{Cadet Taylor Brown}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
 West Point, NY \\
-Taylor.Brown@westpoint.edu}
-
-\author{\IEEEauthorblockN{Cadet Charlotte Richman}\\
+Taylor.Brown@westpoint.edu}\\
+\and
+\IEEEauthorblockN{Cadet Charlotte Richman}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
 West Point, NY \\
 charlotte.richman@westpoint.edu}\\
+\and
+\IEEEauthorblockN{Cadet Meghan DeClue}\\
+\IEEEauthorblockA{\textit{United States Military Academy}\\
+West Point, NY \\
+meghan.declue@westpoint.edu}\\
 
 \author{\IEEEauthorblockN{Cadet Tejas Chadha}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
@@ -104,17 +114,17 @@ Libraries are a crucial component and starting point towards success in EE450. T
 \centering
 \begin{minipage}{0.32\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{https://raw.githubusercontent.com/taylorbrown917-commits/EE450_Best_Practices/7e23eb898bca26e58225763291beca5383b34c06/Screenshot%202025-12-02%20143227.png}
+    \includegraphics[width=\linewidth]{./Screenshot_1.png}
 \end{minipage}
 \hfill
 \begin{minipage}{0.32\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{https://raw.githubusercontent.com/taylorbrown917-commits/EE450_Best_Practices/7e23eb898bca26e58225763291beca5383b34c06/Screenshot%202025-12-06%20202003.png}
+    \includegraphics[width=\linewidth]{./Screenshot_2.png}
 \end{minipage}
 \hfill
 \begin{minipage}{0.32\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{https://raw.githubusercontent.com/taylorbrown917-commits/EE450_Best_Practices/7e23eb898bca26e58225763291beca5383b34c06/Screenshot%202025-12-06%20202012.png}
+    \includegraphics[width=\linewidth]{./Screenshot_3.png}
 \end{minipage}
 
 \caption{EE450 Best Practices Images}
@@ -129,7 +139,7 @@ Sometimes during the class you will come across a library that is not included i
     \item Select the \texttt{.zip} library and open it. Wait for the program to confirm the library has been installed.
     \begin{figure}[h!]
 \centering
-\includegraphics[width=0.45\textwidth]{https://raw.githubusercontent.com/taylorbrown917-commits/EE450_Best_Practices/7e23eb898bca26e58225763291beca5383b34c06/Screenshot%202025-12-06%20202052.png}
+\includegraphics[width=0.45\textwidth]{./Screenshot_4.png}
 \caption{Additional EE450 Best Practices Image}
 \end{figure}
 \end{enumerate}
@@ -141,8 +151,8 @@ Sometimes during the class you will come across a library that is not included i
 % Below are a few recommended subsections for you to contribute to, but feel free to create your own if you think it is appropriate.
 \subsection{Incorporating the Sense-Decide-Act Paradigm} 
 The Sense-Decide-Act Paradigm (SDA) is the most important framework to understand and apply for coding in this class.
-At the start of each project, start with a simple outline of the SDA framework. Typically, I would sugguest looking at your block
-diagram and state diagram to identify what sensors your are using- this is how you know what you are "sensing". Your states from your
+At the start of each project, start with a simple outline of the SDA framework. Typically, I would suggest looking at your block
+diagram and state diagram to identify what sensors you are using- this is how you know what you are "sensing". Your states from your
 state diagram will indicate your "decide" criteria. To finish this, you must look at what must occur to move your robot from one state to
 another. For example, if you are using a PING distance sensor to detect and fire at a target, the distance is within your "sense" section and 
 choosing to fire at the target is your "decide" criteria (i.e if object is within x distance of the bot).Lastly , the "act" section is what your
@@ -154,7 +164,7 @@ what you need to code in each function.
 % Are state diagrams helpful at the start of a project? How did you use them?
 I highly recommend creating a state diagram and a block diagram at the start of every project. In my experience in EE450, state diagrams 
 and block diagrams were some of the most useful tools in helping me complete each project.
-The state diagrams provided a clearly layed out visual representation of what the robot is supposed to be able to do, and how it
+The state diagrams provided a clearly laid out visual representation of what the robot is supposed to be able to do, and how it
 should transition from one behavior or state to another. By mapping out each state, the conditions for each transition, and 
 the actions associated with each state, I was able to generate my code and final product much more efficiently. 
 State diagrams are extremely helpful at the start of EE450 projects even if they are not required/graded because they give you a clear visual of how your robot should behave. When you breakdown your system into states, it becomes much easier to understand what the robot is supposed to do at any given time and what events cause it to switch behaviors.
@@ -178,9 +188,9 @@ Overall, state diagrams can help you:
     \item and troubleshoot faster when things don’t work.
 \end{itemize}
 
-They are a simple but an extremely useful tool, especially when your robot starts getting more complex. For some, in the earlier projects you may feel like the state diagram is unnecessary, however highly reccomend getting some repetitions early on, because they are extremely helpful in later projects. Others may beenfit from a state diagram from the start of Project 2 to the conclusion of Project 5. 
+They are a simple but an extremely useful tool, especially when your robot starts getting more complex. For some, in the earlier projects you may feel like the state diagram is unnecessary, however highly recommend getting some repetitions early on, because they are extremely helpful in later projects. Others may benefit from a state diagram from the start of Project 2 to the conclusion of Project 5. 
 
-The block diagrmas are 
+The block diagrams are 
 helpful for visualizing the overall system, including sensors, control logic, servos, buzzers, LEDs, and other components.
 These diagrams allowed me to break down complex behaviors into manageable parts, making it easier to implement and test each component 
 individually before integrating them into the final system.
@@ -188,16 +198,16 @@ individually before integrating them into the final system.
 \subsection{File Structure and Version Management --- Avoid Drowning in Code} 
 % Arduino sketches can grow into large, complex files. How did you organize them internally so you are always confident
 % that your program is doing what you want?
-To help manage me code and avoid getting lost in what I was doing, I made sure to implement a lot of comments throughout 
-my code. This helped me to remember what each line and section of code was executing and why the code was structred as it was.
-FOr example, if I was using multiple sensors within the same project, I would make a header comment at the top of the functions I 
+To help manage my code and avoid getting lost in what I was doing, I made sure to implement a lot of comments throughout 
+my code. This helped me to remember what each line and section of code was executing and why the code was structured as it was.
+For example, if I was using multiple sensors within the same project, I would make a header comment at the top of the functions I 
 called for each individual sensor so that the commands did not get confused and merged together, leading to error messages
 and bugs. Overall, comments helped me stay organized, helped me understand coding better, and made it easier to debug and correct
 mistakes as I went along in each project. 
 
 \section{Integrating Generative AI}
 The use of generative AI for EE450 projects is very helpful. However, there are use practices that are much more helpful than others.
-The Sense-Decide-Act framework is a great way to structure your prompts to AI. So, when you begin writting your code, ensure that you 
+The Sense-Decide-Act framework is a great way to structure your prompts to AI. So, when you begin writing your code, ensure that you 
 have already created a code "outline" using the SDA framework. For my projects, I wrote a framework that was 50-80 lines of code starting
 with my equipment setup, pin mapping, and variable defintions. Then, I wrote out my functions with the actions I wanted each of them to perform.
 Then, I wrote out the decision criteria for each state and transition. Finally, based on any issues I anticipated, I outlined debounce functions,
@@ -205,15 +215,19 @@ counters, and error handling. Once I had this outline, I used generative AI to h
 Anytime I used AI, I inserted this code outline to ensure that the generated code was something I understood and could implement. For big projects, I often 
 told generative AI what type of function I wanted to build, and it helped figure out how to build it. 
 
-Additionally, generative AI was helpful for group projects. For project 4, my partners and I each coded a seperate section or state. By the time we each had the
+Additionally, generative AI was helpful for group projects. For project 4, my partners and I each coded a separate section or state. By the time we each had the
 our individual portions completed, we had a lot of code to integrate. By using gen AI, we identified that we needed specific criteria that would allow
 the STM to move between states based on sensor inputs. We used gen AI to help us with this integration.
 
 Ultimately, generative AI is a great tool to help you understand coding syntax, explore function types and integrate pieces of code into 
-one project. However, it is critical that you understand the components of the code that you are using so that you can effectively debugg your
+one project. However, it is critical that you understand the components of the code that you are using so that you can effectively debug your
 project. 
 \subsection{Registering for Copilot Pro} 
-% provide instructions for registering for Copilot Pro using a student license
+To register for Copilot Pro, log in with your USMA credentials. First, disconnect your email if it’s already linked to an account. Go to https://github.com/login and sign 
+in using your USMA credentials. Then, navigate to the emails tab in your personal account (personal account -> access -> emails) and click 'unverify' for your 
+westpoint.edu email. Next, log out, then log back in with your personal account, and attach your westpoint.edu email to the account. Finally, verify your student status by 
+visiting https://github.com/education/students, clicking 'Join GitHub Education,” and submitting proof of your student status (like a transcript screenshot). It can take 
+up to 72 hours for the verification to complete, after which you should be ready to use it.
 
 \subsection{Managing and Integrating Generated Code} 
 % give guidance on how to prompt Copilot -- how do you structure the prompt, what context do you give it, and what do you
@@ -230,35 +244,76 @@ Using generated code from sources like ChatGPT, Copilot, etc., can be an extreme
     \item What do you do with what it generates? Make sure you read it carefully and ensure there are no functions or variables that conflict with your existing code. Change some components of it, like names or parameters, so that it fits with your intended design. Test the code incrementally or by itself first, this means either test the code in a new sketch or add serial prints throughout the code to ensure the behavior is congruent with your intended design. Recognize that the produced code will not be perfect, but it will help show you different methods or structures of completing tasks.
 \end{enumerate}
 
+Generated code can be very helpful in completing the more complicated aspects of a project and it helps you to save time in long projects.
+However, it is critical that you understand how the code is being implemented in your project to ensure that it is functioning how you want it to. 
+One way to do this is to create an outline for your code first.
+Before prompting generative AI to write code for you, it is important to first create a test plan for your components and make sure that each piece properly works.
+For example, if you are using a distance sensor to detect objects, you should start with short test code to make sure the sensor works.
+This is a great way to use AI to help you save time through the component testing process.
+You can ask ChatGPT for a short sketch to test the function of each component and individually test them. 
+Once you know that all of the components work, you can start to piece together your final coding sketch. 
+Start by assigning each component in your robot to a pin and defining any variables you need. Make sure you include the proper libraries.
+Next, define the functions you want to include in your code that you implement from your state diagram. 
+Once you have your structure laid out, you can start to prompt generative AI to help you fill in the functions you need. 
+Generative AI is very helpful for helping you to structure your functions to work how you want.
+Make sure to provide AI with context on how you plan on using the function and how it relates to the other functions in your code.
+Lastly, use generative AI to help you debug your code. It can provide helpful explanations for why errors are occurring and provide guidance for how to fix them. 
+
 
 
 \subsection{Documentation and Citation of Generated Code} 
 % How do you document and cite generated code? How do you avoid plagiarism and ensure all generated code is clearly marked?
+When using generative AI to assist you in writing code for this class, it is essential that you properly cite the sources that you used for two primary reasons.
+The first, and most important, is maintaining academic integrity in your work. 
+The second is to provide a record for yourself to understand what parts of your code were generated from AI and what sections were written by you.
+Oftentimes you will be able to recycle code from previous projects and modify it to meet the criteria of the project you are currently working on. 
+By ensuring that you cite each section of code, it helps you to understand how the code works and how you can use it to help you better understand coding logic and implementation.
+It is crucial you do two things to properly document your code.
+The first thing you will do is create the citation you will include in your references page. 
+You will create a citation in accordance with the DAAW that includes what model of AI you used (for example: ChatGPT 5.0), the prompt you inputted into that chatbot, and then an explanation of how you implemented the assistance into your code. 
+The second thing you will do is comment in your code exactly which lines were generated by AI.
+An example of this would be the following: assistance to the editor from ChatGPT 5.0, commented next to the line of code. 
+
 
 \section{Testimonials and Examples}
 Feel free to add any other guidance, examples (good or bad!), or advice to other cadets here.
 
 \subsection{Advice from CDT Charlotte Richman}
 I highly recommend completing a test integration plan at the onset of each project. This plan should
-outline how you are going to go about testing each individual componet of your robot, to include servos, sensors, LEDs, etc., 
-and then how you will integrate all those seperate components into one robot that functions as you want it to. 
+outline how you are going to go about testing each individual component of your robot, to include servos, sensors, LEDs, etc., 
+and then how you will integrate all those separate components into one robot that functions as you want it to. 
 This plan will save you a lot of time and frustration when you get into more complex projects and problems with many 
 moving parts because you will know exactly what is and is not functioning properly before you are too deep in and 
 have to backtrack, sometimes all the way back to the beginning. Having a clear plan for testing and integration will save you
-a lot of time and evergy in the long run, and it will help you to understand what each component of your robot is 
+a lot of time and energy in the long run, and it will help you to understand what each component of your robot is 
 doing, as well as how it is contributing to your entire system. I think that is pretty cool! 
 
+\subsection{Advice from CDT Meghan DeClue}
+If I had to give one piece of advice, it would be to start with your state diagram for the project. Properly understanding
+the states that you want your robot to be in and how you want them to transition will make the coding process much easier. 
+From there, I would recommend breaking down each state into a function embedded in your loop() function. This will help you to keep your
+code organized and easy to understand. By only keeping functions in your loop(), you can simplify your code and make it easier to read and debug
+in the case of having any errors. Complex projects tend to have hundreds of lines of code and can become hard to understand very quickly. 
+Keeping your code organized by state and function will help to avoid confusion and it will make coding your project more efficient.
+
 \subsection{Advice from Amani Haskins} % example
-I have found that Arduino IDE and the libraries we import throughout this class have many tester files. I reccomend that when you
+I have found that Arduino IDE and the libraries we import throughout this class have many tester files. I recommend that when you
 download a new library, you open "File" and then "Examples" to see the files that are included with the library. I would have saved myself
-a lot of time if I had used these exampled files earlier in the course. The examples will give you a basic set up for servo controlled
+a lot of time if I had used these example files earlier in the course. The examples will give you a basic set up for servo controlled
 robot like the Traxxas and Boebot. They will also demonstrate a basic set up for the Pixycam and other sensors that are commonly used.
 In my experience, when you are testing code, it also helps to copy and paste the function or section of code you are working on into a different 
-file in Arduino IDE or in a testcode file. I have found that sometimes problems are easier to debugg when you isolate the function/ state that
-the problem is occuring in. Lastly, I highly highly recommend using serial prints throughout your code to debugg, especially when you are using
+file in Arduino IDE or in a testcode file. I have found that sometimes problems are easier to debug when you isolate the function/ state that
+the problem is occurring in. Lastly, I highly highly recommend using serial prints throughout your code to debug, especially when you are using
 multiple states. While states are not hard to build and test on their own, they are hard to track if you do not have an easy mechanism for it.
-For example, when you integrate a state, just simply write "serial.print(in state x") or use an LED and write "digitalWrite(LED_X, HIGH") so you can
+For example, when you integrate a state, just simply write \texttt{Serial.print("in state x")} or use an LED and write \texttt{digitalWrite(LED\_X, HIGH)} so you can
 keep track of your states during integration.
+
+\subsection{Advice from CDT Keishun Pickett}
+I think that TinkerCAD is a very useful resource for this course. TinkerCAD is helpful because it provides an additional way to verify your work. On TinkerCAD, you can 
+model most of the components that go along with the BOE-Bot, which is frequently used throughout the course. I found myself using it as a way to sketch out my wiring for 
+my robot and to test my code when I needed extra time. Sometimes this can be helpful because certain components can be faulty and might mislead you about where the problem 
+really is. TinkerCAD can also be useful when creating block diagrams for your Arduino Uno.
+
 
 \bibliographystyle{plain}
 \bibliography{References}
