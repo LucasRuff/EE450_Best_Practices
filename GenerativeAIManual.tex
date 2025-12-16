@@ -49,6 +49,11 @@ charlotte.richman@westpoint.edu}\\
 \IEEEauthorblockA{\textit{United States Military Academy}\\
 West Point, NY \\
 meghan.declue@westpoint.edu}\\
+
+\author{\IEEEauthorblockN{Cadet Tejas Chadha}\\
+\IEEEauthorblockA{\textit{United States Military Academy}\\
+West Point, NY \\
+Tejasvir.Chadha@westpoint.edu}\\
 }
 
 \maketitle
@@ -85,8 +90,29 @@ guidance on how GitHub works, or how to submit a pull request, you can check the
 % Any generic guidance not specific to one IDE can go here, before the subsections.
 \subsection{Visual Studio Code}
 
-\subsection{Arduino IDE}
 
+Visual Studio Code (VS Code) is a code  editor that works well for Arduino projects when used with the official Arduino IDE. 
+To set it up, install VS Code from \url{https://code.visualstudio.com/} and open the Extensions Marketplace to search for and install the Microsoft Arduino extension, then restart VS Code to load it properly.
+ Make sure the Arduino IDE is installed for compiling and uploading code. 
+ Then open the Extensions Marketplace, search for "PlatformIO ," and install it, restarting VS Code afterward to load it properly. 
+ PlatformIO handles compiling, uploading, and managing libraries for your board. 
+ When you open PlatformIO, you can create a new project by selecting your board type like Arduino Uno R3 (this is what we use for our class) and setting the project location.
+ You should create a new project titled according to the assignment (e.g., Mini\_Project1, Project2, etc.) to keep your work organized.
+Once the project is created, you can write your code in the \texttt{src} folder's \texttt{main.cpp} file. To use the serial monitor, open the PlatformIO toolbar and click on the "Serial Monitor" icon or use the shortcut \texttt{Ctrl+Alt+M}.
+To upload your sketch to your arduino board, connect the board to your computer using a USB cable. Then, click on the "Upload" icon in the PlatformIO toolbar or use the shortcut \texttt{Ctrl+Alt+U}.
+You can edit and upload code directly from VScode instead of the Arduino IDE, which can be more efficient for larger projects since VS code has a built in AI code generator. 
+\subsection{Arduino IDE}
+Downloading and using the Arduino IDE is a crucial step in completing EE450 projects. Below are some steps to help you get started.
+1. go to \url{https://www.arduino.cc/en/software} and download the latest version of Arduino IDE for your operating system (Windows, MacOS, Linux).
+2. Install the software by following the installation prompts.
+3. Open the Arduino IDE after installation is complete.
+4. create a folder on your computer where you will save all your EE450 projects. This will help you stay organized.
+5. for each new assignment, create a sub-folder and title it according to the project (e.g., Mini_Project1, Project2, etc.). This will both help you organize your sketches and track code edits. 
+6. within the Arduino IDE, go to \texttt{File} and then \texttt{Preferences}. In the preferences window, set the sketchbook location to the folder you created in step 4. This will ensure that all your projects are saved in one place.
+7. To create a new sketch, go to \texttt{File} and then \texttt{New}. This will open a new window where you can start writing your code.
+8. To test your sketch on your arduino board, connect the board to your computer using a USB cable. Then, go to \texttt{Tools}, select the correct board type (e.g., Arduino Uno, Arduino Mega, etc.), and select the correct port that your board is connected to.
+9. To upload your sketch to the board, click on the right arrow icon (Upload button) in the toolbar or go to \texttt{Sketch} and then \texttt{Upload}. The IDE will compile your code and upload it to the board. You should see the onboard LED blink if the upload is successful.
+10. if your code uses the serial monitor, you can open it by clicking on the magnifying glass icon in the top right corner of the IDE or by going to \texttt{Tools} and then \texttt{Serial Monitor}. This will allow you to view any output from your sketch.
 \subsubsection{Installing Libraries}
 Libraries are a crucial component and starting point towards success in EE450. There are multiple ways to download libraries, which may be necessary to troubleshoot if you run into issues, however this will describe the most common two.
 
@@ -298,6 +324,15 @@ I think that TinkerCAD is a very useful resource for this course. TinkerCAD is h
 model most of the components that go along with the BOE-Bot, which is frequently used throughout the course. I found myself using it as a way to sketch out my wiring for 
 my robot and to test my code when I needed extra time. Sometimes this can be helpful because certain components can be faulty and might mislead you about where the problem 
 really is. TinkerCAD can also be useful when creating block diagrams for your Arduino Uno.
+
+\subsection{Advice from CDT Tejas Chadha}
+It is critical that instead of trying to write your code all at once, you write specific functions for each function of your robot. For example, having a function that handles movement, one that handles decision making, and one that handles lights or buzzers 
+will help you to stay organized and make debugging much easier. When you have all your code in one big block, it can be hard to identify where the problem is occurring. However, if you have separate functions, you can test each function individually to ensure it is working properly before integrating it into your main code. This will save you a lot of time and frustration in the long run.
+In addition, you should never only work in a single sketch for a project. Have multiple sketches that you have open and test components or functions inside their own sketch. Once you are sure that everything works as intended,
+then you can integrate it into your main sketch. This will help you to isolate problems and make debugging much easier. Finally, use the serial monitor as much as possible to debug your code and components. The best way to do this is to add serial prints throughout your code to track the flow of your program and identify where things might be going wrong. This will help you to understand what is happening in your code and make it easier to identify and fix any issues.
+One example of this is if you are using a distance sensor to detect objects, you should start with short test code to make sure the sensor works. This is a great way to use AI to help you save time through the component testing process. Once you know that all of the components work, you can start to piece together your final coding sketch.
+Another piece of advice that I have is to use your time efficiently. Often you will have a 55 minute class instead of a full lab, but using the extra time to work on your projects is critical to finishing them on time. You need to block off enough time to actually test your robots rather than trying to do it all on demonstration day. Use the time on mini-project days to start working on your main robot. 
+
 
 
 \bibliographystyle{plain}
